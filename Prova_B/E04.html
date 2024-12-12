@@ -8,10 +8,25 @@
 
     //Entrada
 
+    const numeroUsuario = Number(prompt(`Informe um número qualquer:`));
+    const potenciaUsuario = Number(prompt(`Qual a potência que você deseja elevar este número?`));
+    let potencia = numeroUsuario;
 
     //Processamento
 
+    if (potenciaUsuario == 0) {
+        potencia = 1;
+        alert(potencia);
+    }
+    else {
+        for (let mult = 1; mult < potenciaUsuario; mult += 1) {
+            potencia = numeroUsuario * potencia;
+        }
+    }
+    
+    alert(potencia);
+    
+
 
     //Saída
-
 </script>

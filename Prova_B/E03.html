@@ -7,10 +7,17 @@
 
     //Entrada
 
+    const n = Number(prompt(`Informe um número N:`));
+    soma = 0;
+
 
     //Processamento
 
+    for(let num = 1; num < n; num+=1){
+        soma = soma + num;
+    }
 
     //Saída
 
+    document.write(`A somatória do número 1 até ${n} é igual à: ${soma}`);
 </script>

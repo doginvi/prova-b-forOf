@@ -8,10 +8,22 @@
     
     //Entrada
 
+    let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+    let duplicados = [];
+
+
 
     //Processamento
 
+    for(let num of lista){
+        let inclui = duplicados.includes(num);
+        if(inclui == false){
+            duplicados.push(num);
+        }
+    }
 
     //Saída
+
+    document.write(`A lista de números inteiros é: ${duplicados.sort((a, b) => a - b)}`);
 
 </script>

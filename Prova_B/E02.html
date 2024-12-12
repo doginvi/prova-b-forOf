@@ -6,12 +6,24 @@
     */
     //AQUI, USE FOR...OF!
     
-    //Entrada
+    //Entrada    
 
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    let vogais = ['A', 'E', 'I', 'O', 'U'];
+    let quant = [];
 
     //Processamento
 
+    for(let letra of lista){
+        let primeira = letra[0];
+        if(vogais.includes(primeira)){
+            quant.push(primeira);
+        }
+    }
 
     //Saída
+
+    alert(`A quantidade de vogais maiúsculas encontradas é de: ${quant.length}`);
+
 
 </script>
